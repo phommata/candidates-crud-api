@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  app:
+    build:
+      context: .
+    image: promenade/php-interview:latest
+    ports: ["80:80", "443:443"]
+    volumes:
+    - .:/var/www/html/
+
+  db:
+    image: mysql:latest
+    ports: ["3306:3306"]
+    environment:
+      MYSQL_ROOT_PASSWORD: interview
+      MYSQL_USER: interview
+      MYSQL_PASSWORD: interview
+      MYSQL_DATABASE: interview
+    volumes:
+      - interview-db:/var/lib/mysql
+      - ./db/install.sql:/docker-entrypoint-initdb.d/install.sql:delegated
+
+volumes:
+  interview-db:
