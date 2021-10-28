@@ -1,15 +1,7 @@
-# PHP Interview
-Thank you for your time. We would like to do a coding exercise with you to see how you might fit in with our team.
-
-Please see your interviewer for all questions not answered in this document.
+# Candidates CRUD API
 
 ## Application Overview
-Today we will be building a RESTful employee candidate API. We will call it the "Candidate API".
-Some of the scaffolding is already created for you. Please take a moment to get acquainted with it.
-
-This is built using Slim Framework. It is strictly for the purpose of this interview. We do not use Slim Framework.
-Do not get overly concerned with the framework itself. Hopefully this README will give you much of the information you
-need. If there are any other questions, please ask the interviewer.
+A RESTful employee candidate API called the "Candidate API".
 
 It uses PHP 7.4 and MySQL 8. When you setup the project in your IDE, you will want to set it up for PHP 7.4. Use any and
 all the features of PHP 7.4 and MySQL 8.
